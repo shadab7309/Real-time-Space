@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: cyan;
+    text-align: center;
+}
+
+#header {
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid cyan;
+}
+
+#search-box, #satellite-list {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid cyan;
+    background: black;
+    color: cyan;
+    font-size: 16px;
+    text-align: center;
+}
+
+#tracker-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#satellite-info {
+    border: 2px solid cyan;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px cyan;
+    transition: transform 0.3s;
+}
+
+#satellite-info:hover {
+    transform: scale(1.05);
+}
+
+#globe-container {
+    width: 600px;
+    height: 600px;
+}
