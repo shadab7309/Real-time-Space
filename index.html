@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Satellite Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Futuristic Satellite Tracker</h1>
+        <input type="text" id="search-box" placeholder="Enter Satellite ID (e.g., 25544)">
+        <button onclick="searchSatellite()">Search</button>
+        <select id="satellite-list" onchange="selectSatellite()">
+            <option value="25544">International Space Station (ISS)</option>
+            <option value="36516">Hubble Space Telescope</option>
+            <option value="47306">Starlink-1000</option>
+            <option value="48274">OneWeb-0178</option>
+        </select>
+    </div>
+    
+    <div id="tracker-container">
+        <div id="satellite-info">
+            <h2>Live Satellite Data</h2>
+            <p><strong>Name:</strong> <span id="sat-name">Loading...</span></p>
+            <p><strong>Latitude:</strong> <span id="lat">0</span></p>
+            <p><strong>Longitude:</strong> <span id="lng">0</span></p>
+            <p><strong>Altitude:</strong> <span id="alt">0</span> km</p>
+            <p><strong>Velocity:</strong> <span id="velocity">0</span> km/h</p>
+        </div>
+        <div id="globe-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+    <script src="script.js"></script>
+</body>
+</html>
